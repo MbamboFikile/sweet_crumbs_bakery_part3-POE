@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit product enquiries, volunteer interest, or sponsorship proposals with Sweet Crumbs Bakery.">
+  <title>Sweet Crumbs Bakery | Enquiry</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    button, input, select, textarea { font: inherit; }
+
+    :root {
+      --plum: #4A1525;
+      --plum-light: #6A2438;
+      --gold: #D49B35;
+      --gold-light: #F4D38A;
+      --cream: #FAF6F0;
+      --cream-card: #FFFFFF;
+      --cocoa: #2C1D18;
+      --muted: #64534D;
+      --border: #E5D8CD;
+      --error: #BA3A3A;
+      --success: #2E7D32;
+      --shadow: 0 0.75rem 2rem rgba(44, 29, 24, 0.08);
+    }
+
+    body {
+      background: radial-gradient(circle at top right, rgba(212, 155, 53, 0.12), transparent 35rem), var(--cream);
+      color: var(--cocoa);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 { line-height: 1.25; color: var(--plum); }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+    h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
+
+    a { color: var(--plum); text-decoration: none; }
+    .container { width: min(92%, 72rem); margin-inline: auto; }
+    main.container { padding-block: 2.5rem 4rem; }
+
+    .site-header {
+      background: linear-gradient(135deg, var(--plum), var(--plum-light));
+      color: #fff;
+      box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
+    }
+    .header-inner { display: grid; gap: 1.5rem; padding-block: 2.2rem 1.4rem; }
+    .brand h1 { color: #fff; margin-top: 0.2rem; }
+    .brand > p:last-child { color: var(--gold-light); margin-top: 0.3rem; }
+    .eyebrow { color: var(--gold); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+    .site-header .eyebrow { color: var(--gold-light); }
+
+    .main-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .main-nav a {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.55rem 1.1rem;
+      transition: all 0.25s ease;
+    }
+    .main-nav a:hover, .main-nav a.active {
+      background: var(--gold);
+      color: var(--cocoa);
+      border-color: var(--gold);
+    }
+
+    .section-card {
+      background: var(--cream-card);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow);
+      margin-block: 1.8rem;
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .contact-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .contact-form { background: #FAF3EB; border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-weight: 700; margin-bottom: 0.4rem; color: var(--plum); }
+    .form-group input, .form-group select, .form-group textarea {
+      background: #fff; border: 1px solid #D1C0B5; border-radius: 0.6rem; color: var(--cocoa); padding: 0.75rem; width: 100%;
+    }
+    .form-group input.error, .form-group textarea.error { border-color: var(--error); }
+
+    .button-primary {
+      background: var(--plum); color: #fff; border: none; border-radius: 999px; font-weight: 800; padding: 0.75rem 1.3rem; cursor: pointer; transition: 0.2s; width: 100%;
+    }
+    .button-primary:hover { background: var(--gold); color: var(--cocoa); }
+
+    .form-feedback { padding: 1rem; border-radius: 0.6rem; margin-bottom: 1rem; display: none; font-weight: 600; text-align: center; }
+    .form-feedback.success { background: #E8F5E9; color: var(--success); border: 1px solid #C8E6C9; display: block; }
+
+    .site-footer { background: var(--cocoa); color: var(--cream); padding-block: 2.5rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <p class="eyebrow">Baked with Love & Precision</p>
+        <h1>Sweet Crumbs Bakery</h1>
+        <p>Freshly baked artisanal treats every day.</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card">
+      <div style="margin-bottom: 1.5rem;">
+        <p class="eyebrow">Product & Community</p>
+        <h2>Specialist Enquiry Form</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <h3>Enquiry Guidelines</h3>
+          <p style="color: var(--muted); margin-top: 0.5rem;">Use this form to enquire about catering availability, cost estimations, community baking workshops, or sponsorship opportunities.</p>
+        </div>
+
+        <form class="contact-form" id="enquiryForm" action="#" method="post">
+          <div class="form-feedback" id="feedback"></div>
+          
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input id="name" name="name" type="text" placeholder="e.g. John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="e.g. john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiry-type">Enquiry Category *</label>
+            <select id="enquiry-type" name="enquiry-type">
+              <option value="product">Product & Catering Availability</option>
+              <option value="volunteer">Baking Workshop Volunteer</option>
+              <option value="sponsor">Community Bakery Sponsor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Detailed Enquiry / Requirements *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Specify your requirements or dates..." required></textarea>
+          </div>
+
+          <button class="button-primary" type="submit">Submit Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sweet Crumbs Bakery. All Rights Reserved.</p>
+      <p>Fikile Mbambo | ST10469237 | Web Development | WEDE5020W</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('enquiryForm');
+      const feedback = document.getElementById('feedback');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+
+        if (name.value.trim().length < 2 || !email.value.includes('@')) {
+          alert('Please fill out all required fields correctly.');
+          return;
+        }
+
+        feedback.textContent = 'Thank you! Your enquiry has been submitted successfully.';
+        feedback.className = 'form-feedback success';
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
