@@ -1,0 +1,30 @@
+/* Sweet Crumbs Bakery Part 2 | Fikile Mbambo | ST10469237 */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+img{display:block;max-width:100%;height:auto}
+button,input,select,textarea{font:inherit}
+:root{--cream:#fff8f0;--ivory:#fffdf9;--blush:#f5c9c9;--rose:#c86b85;--berry:#7a3045;--cocoa:#4a3028;--caramel:#c98264;--gold:#d9a441;--white:#fff;--border:#ead6cc;--muted:#765f58;--shadow:0 .65rem 1.8rem rgba(74,48,40,.10)}
+body{background:radial-gradient(circle at top left,rgba(245,201,201,.28),transparent 30rem),var(--cream);color:var(--cocoa);font-family:Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.7;letter-spacing:.01em}
+h1,h2,h3{line-height:1.2;letter-spacing:-.01em}h1{font-size:clamp(2.1rem,5vw,4rem)}h2{font-size:clamp(1.8rem,3.2vw,2.6rem)}h3{font-size:1.2rem}
+a{color:var(--berry)}a:hover{color:var(--cocoa)}:focus-visible{outline:.2rem solid var(--gold);outline-offset:.2rem}
+.container{width:min(92%,70rem);margin-inline:auto}main.container{padding-block:2rem 3rem}
+.site-header{background:linear-gradient(135deg,var(--berry),var(--rose) 55%,var(--caramel));color:var(--white);box-shadow:0 .35rem 1rem rgba(74,48,40,.16)}
+.header-inner{display:grid;gap:1.5rem;padding-block:2.2rem 1.4rem}.brand h1{margin-top:.2rem}.brand>p:last-child{margin-top:.5rem}
+.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.site-header .eyebrow{color:#fff1c9}
+.main-nav{display:flex;flex-wrap:wrap;gap:.55rem}.main-nav a{border:1px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;font-size:.92rem;font-weight:700;padding:.55rem .9rem;text-decoration:none;transition:.2s}.main-nav a:hover,.main-nav a:focus-visible,.main-nav a.active{background:rgba(255,255,255,.2);transform:translateY(-.1rem)}
+.section-card{background:rgba(255,253,249,.95);border:1px solid var(--border);border-radius:1.25rem;box-shadow:var(--shadow);margin-block:1.5rem;padding:clamp(1.25rem,3vw,2.3rem)}
+.section-heading{margin-bottom:1.4rem}.section-heading p:last-child{color:var(--muted);margin-top:.4rem}
+.hero,.two-column,.contact-grid{display:grid;gap:clamp(1.5rem,4vw,3rem);grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+.hero-copy h2{font-size:clamp(2rem,4vw,3.3rem);margin-top:.35rem}.hero-copy>p:not(.eyebrow){color:var(--muted);margin-top:1rem}
+.hero-image,.image-frame{border-radius:1rem;overflow:hidden}.hero-image img,.image-frame img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}.button{border:.12rem solid transparent;border-radius:999px;cursor:pointer;display:inline-block;font-weight:800;padding:.75rem 1.15rem;text-align:center;text-decoration:none;transition:.2s}.button:hover,.button:focus-visible{box-shadow:0 .45rem 1rem rgba(74,48,40,.16);transform:translateY(-.12rem)}.button:active{transform:translateY(.04rem)}.button-primary{background:var(--berry);color:#fff}.button-primary:hover{background:var(--cocoa);color:#fff}.button-secondary{background:var(--blush);color:var(--cocoa)}
+.feature-grid,.product-grid,.gallery-grid{display:grid;gap:1.25rem}.feature-grid{grid-template-columns:repeat(3,1fr)}.product-grid{grid-template-columns:repeat(3,1fr)}.gallery-grid{grid-template-columns:repeat(3,1fr)}
+.feature,.benefit,.step{background:#fff8f4;border:1px solid var(--border);border-radius:1rem;padding:1.2rem}.feature p,.product-content p,.benefit p,.step p{color:var(--muted);margin-top:.4rem}
+.highlight-box{background:linear-gradient(145deg,#fff2eb,#fff8f0);border-left:.3rem solid var(--caramel);border-radius:.9rem;padding:1.25rem}.highlight-box ul{list-style-position:inside}
+.product-card{background:#fff;border:1px solid var(--border);border-radius:1rem;box-shadow:0 .35rem 1rem rgba(74,48,40,.07);display:flex;flex-direction:column;overflow:hidden;transition:.2s}.product-card:hover{box-shadow:0 .8rem 1.7rem rgba(74,48,40,.13);transform:translateY(-.25rem)}.product-card img{aspect-ratio:4/3;object-fit:cover;width:100%}.product-content{display:flex;flex:1;flex-direction:column;gap:.4rem;padding:1rem}
+.gallery-item{background:#fff;border:1px solid var(--border);border-radius:.9rem;overflow:hidden}.gallery-item img{aspect-ratio:1;object-fit:cover;width:100%;transition:.25s}.gallery-item:hover img{transform:scale(1.04)}.gallery-item figcaption{font-weight:800;padding:.7rem .85rem}
+.steps{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}.step{border-top:.25rem solid var(--rose)}.step span{color:var(--caramel);font-weight:900;letter-spacing:.12em}
+.contact-details p{margin-top:.6rem}.notice{background:#fff1e8;border:1px solid #edc8b4;border-radius:.8rem;margin-top:1.2rem;padding:1rem}.contact-form{background:#fff8f4;border:1px solid var(--border);border-radius:1rem;padding:1.2rem}.form-group{margin-bottom:1rem}.form-group label{display:block;font-weight:800;margin-bottom:.35rem}.form-group input,.form-group select,.form-group textarea{background:#fff;border:1px solid #d9c0b5;border-radius:.6rem;color:var(--cocoa);padding:.75rem;width:100%}.form-group textarea{min-height:9rem;resize:vertical}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--berry);outline:.15rem solid rgba(200,107,133,.2)}
+.site-footer{background:var(--cocoa);color:#fff7ef;padding-block:2rem;text-align:center}.site-footer p+p{margin-top:.25rem}
+@media(max-width:56.25rem){.hero,.two-column,.contact-grid{grid-template-columns:1fr}.product-grid,.gallery-grid{grid-template-columns:repeat(2,1fr)}.feature-grid,.steps{grid-template-columns:1fr}}
+@media(max-width:37.5rem){body{font-size:.96rem}.section-card{border-radius:.9rem;margin-block:1rem;padding:1rem}.header-inner{padding-block:1.6rem 1rem}.main-nav{display:grid;grid-template-columns:repeat(2,1fr)}.main-nav a{text-align:center}.hero-actions,.hero-actions .button{width:100%}.product-grid,.gallery-grid{grid-template-columns:1fr}.hero-copy h2{font-size:2rem}}
